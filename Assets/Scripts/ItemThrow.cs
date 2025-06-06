@@ -7,8 +7,13 @@ public class ItemThrow : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.AddForce(cameraTransform.forward * 2f, ForceMode.Impulse);
+            // Применяем силу для выброса предмета
+            rb.AddForce(cameraTransform.forward * 5f, ForceMode.Impulse);
             Debug.Log("Предмет выброшен.");
+        }
+        else
+        {
+            Debug.LogWarning("Rigidbody не найден на предмете!");
         }
     }
 }

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Kenchik\\My project (2)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\iteminspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iteminspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +19,8 @@
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\singleslotinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|c:\\users\\kenchik\\my project (2)\\assets\\scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\iteminspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iteminspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\sloticonui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +31,20 @@
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inspectpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\itemthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|c:\\users\\kenchik\\my project (2)\\assets\\scripts\\itemthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|c:\\users\\kenchik\\my project (2)\\assets\\scripts\\itemphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\itemphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Kenchik\\My project (2)\\assets\\scripts\\itemtrue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemtrue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|c:\\users\\kenchik\\my project (2)\\assets\\scripts\\itemphysicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemphysicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +62,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ItemPhysicsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPhysicsController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ItemPhysicsController.cs",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPhysicsController.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\ItemPhysicsController.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T20:55:34.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ItemTrue.cs",
+              "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemTrue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ItemTrue.cs",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemTrue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ItemTrue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T20:44:31.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ItemPhysics.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPhysics.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemPhysics.cs",
-              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPhysics.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\ItemPhysics.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPhysics.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ItemPhysics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T18:01:02.59Z",
               "EditorCaption": ""
@@ -73,7 +107,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemThrow.cs",
               "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemThrow.cs*",
               "RelativeToolTip": "Assets\\Scripts\\ItemThrow.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T17:39:16.41Z",
               "EditorCaption": ""
@@ -84,9 +118,9 @@
               "Title": "InspectPanelUI.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\InspectPanelUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InspectPanelUI.cs",
-              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\InspectPanelUI.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\InspectPanelUI.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\InspectPanelUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InspectPanelUI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T16:00:40.788Z",
               "EditorCaption": ""
@@ -97,8 +131,8 @@
               "Title": "SlotIconUI.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\SlotIconUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SlotIconUI.cs",
-              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\SlotIconUI.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\SlotIconUI.cs*",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\SlotIconUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SlotIconUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T15:49:42.182Z",
@@ -106,65 +140,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ItemInspector.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemInspector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemInspector.cs",
               "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemInspector.cs*",
               "RelativeToolTip": "Assets\\Scripts\\ItemInspector.cs*",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwHAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwv4MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T12:30:38.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ItemPickup.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemPickup.cs",
               "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\ItemPickup.cs*",
               "RelativeToolTip": "Assets\\Scripts\\ItemPickup.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:36:42.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SingleSlotInventory.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\SingleSlotInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SingleSlotInventory.cs",
-              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\SingleSlotInventory.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\SingleSlotInventory.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\SingleSlotInventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SingleSlotInventory.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:35:31.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Item.cs",
-              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\Item.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\Item.cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAwwCIAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\Item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:33:26.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\Kenchik\\My project (2)\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:30:37.433Z",
               "EditorCaption": ""

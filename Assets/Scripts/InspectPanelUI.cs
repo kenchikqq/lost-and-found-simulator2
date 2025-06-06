@@ -1,21 +1,50 @@
 using UnityEngine;
-using TMPro;
+using TMPro; // Не забудь подключить библиотеку для работы с TextMeshPro
 
 public class InspectPanelUI : MonoBehaviour
 {
-    public GameObject panel; // Панель осмотра
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI descriptionText;
+    [Header("Панель осмотра")]
+    public GameObject panel; // Панель для осмотра предмета
+    public TextMeshProUGUI nameText; // Текст для имени предмета
+    public TextMeshProUGUI descriptionText; // Текст для описания предмета
 
+    // Этот метод будет вызываться для отображения панели с данными о предмете
     public void Show(string itemName, string itemDescription)
     {
-        panel.SetActive(true);          // Показываем панель
-        nameText.text = itemName;       // Имя предмета
-        descriptionText.text = itemDescription; // Описание
+        if (panel != null)
+        {
+            panel.SetActive(true); // Показываем панель
+        }
+
+        if (nameText != null)
+        {
+            nameText.text = itemName; // Устанавливаем имя предмета
+        }
+        else
+        {
+            Debug.LogError("nameText не привязан!");
+        }
+
+        if (descriptionText != null)
+        {
+            descriptionText.text = itemDescription; // Устанавливаем описание предмета
+        }
+        else
+        {
+            Debug.LogError("descriptionText не привязан!");
+        }
     }
 
+    // Этот метод будет вызываться для скрытия панели
     public void Hide()
     {
-        panel.SetActive(false);         // Скрываем панель
+        if (panel != null)
+        {
+            panel.SetActive(false); // Прячем панель
+        }
+        else
+        {
+            Debug.LogError("panel не привязан!");
+        }
     }
 }

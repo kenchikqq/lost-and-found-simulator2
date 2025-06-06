@@ -24,7 +24,6 @@ public class Item : MonoBehaviour
 
         rb.isKinematic = !enable;
         rb.useGravity = enable;
-
         if (!enable)
         {
             rb.linearVelocity = Vector3.zero;

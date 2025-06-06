@@ -8,7 +8,7 @@ public class SlotIconUI : MonoBehaviour
 
     void Update()
     {
-        if (inventory.CurrentItem != null && inventory.CurrentItem.itemIcon != null)
+        if (inventory != null && inventory.CurrentItem != null && inventory.CurrentItem.itemIcon != null)
         {
             iconImage.enabled = true;
             iconImage.sprite = inventory.CurrentItem.itemIcon; // Присваиваем иконку

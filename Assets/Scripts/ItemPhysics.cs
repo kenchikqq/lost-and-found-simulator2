@@ -17,13 +17,19 @@ public class ItemPhysics : MonoBehaviour
     {
         if (rb == null) return;
 
-        rb.isKinematic = !enable;
-        rb.useGravity = enable;
+        rb.isKinematic = !enable; // ���� ������ ��������, �� ���������� ���������
+        rb.useGravity = enable;   // �������� ����������
 
         if (!enable)
         {
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
+    }
+
+    public void DetachFromParent()
+    {
+        // ���������� ������ �� ��������, ����� �� �� �������� �� �������
+        transform.SetParent(null);
     }
 }

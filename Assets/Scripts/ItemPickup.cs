@@ -8,7 +8,7 @@ public class ItemPickup : MonoBehaviour
 
     void Update()
     {
-        // Поднять предмет (E)
+        // Поднятие предмета (клавиша "E")
         if (Input.GetKeyDown(KeyCode.E))
         {
             Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
@@ -17,28 +17,11 @@ public class ItemPickup : MonoBehaviour
             if (Physics.Raycast(ray, out hit, pickupRange))
             {
                 Item item = hit.collider.GetComponent<Item>();
-                if (item != null)
+                if (item != null && !inventory.CurrentItem) // Подбираем только если инвентарь пуст
                 {
-                    inventory.AddItem(item);
-                    item.EnablePhysics(false); // Отключаем физику
-                    item.gameObject.SetActive(false); // Делаем невидимым
-                }
-            }
-        }
-
-        // Выбросить предмет (Q)
-        if (Input.GetKeyDown(KeyCode.Q) && inventory.CurrentItem != null)
-        {
-            Vector3 dropPos = playerCamera.transform.position + playerCamera.transform.forward * 1.5f;
-            Item dropped = inventory.DropItem(dropPos);
-
-            if (dropped != null)
-            {
-                dropped.EnablePhysics(true); // Включаем физику
-                ItemThrow itemThrow = dropped.GetComponent<ItemThrow>();
-                if (itemThrow != null)
-                {
-                    itemThrow.Throw(playerCamera.transform); // Выбросить предмет
+                    inventory.AddItem(item);  // Добавляем предмет в инвентарь
+                    item.EnablePhysics(false);  // Отключаем физику при взятии
+                    item.gameObject.SetActive(false);  // Делаем предмет невидимым
                 }
             }
         }
