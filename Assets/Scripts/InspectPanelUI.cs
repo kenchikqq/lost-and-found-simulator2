@@ -3,7 +3,7 @@ using TMPro;
 
 public class InspectPanelUI : MonoBehaviour
 {
-    public GameObject panel; // сам InspectPanel
+    public GameObject panel; // Панель осмотра
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
 

@@ -3,15 +3,15 @@ using UnityEngine.UI;
 
 public class SlotIconUI : MonoBehaviour
 {
-    public SingleSlotInventory inventory; // Перетащи сюда объект с SingleSlotInventory
-    public Image iconImage;               // Перетащи сюда UI Image (SlotIcon)
+    public SingleSlotInventory inventory; // Инвентарь
+    public Image iconImage;               // Иконка
 
     void Update()
     {
-        if (inventory.CurrentItem != null && inventory.CurrentItem.icon != null)
+        if (inventory.CurrentItem != null && inventory.CurrentItem.itemIcon != null)
         {
             iconImage.enabled = true;
-            iconImage.sprite = inventory.CurrentItem.icon;
+            iconImage.sprite = inventory.CurrentItem.itemIcon; // Присваиваем иконку
         }
         else
         {

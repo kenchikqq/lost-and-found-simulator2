@@ -1,104 +1,103 @@
 using UnityEngine;
 
-
 public class ItemInspector : MonoBehaviour
 {
-
-    [Header("Позиция для осмотра")]
+    [Header("РџРѕР·РёС†РёСЏ РґР»СЏ РѕСЃРјРѕС‚СЂР°")]
     public Transform inspectionPoint;
 
-    [Header("Инвентарь игрока")]
+    [Header("РРЅРІРµРЅС‚Р°СЂСЊ РёРіСЂРѕРєР°")]
     public SingleSlotInventory inventory;
 
-    [Header("UI панель осмотра")]
+    [Header("UI РїР°РЅРµР»СЊ РѕСЃРјРѕС‚СЂР°")]
     public InspectPanelUI inspectPanel;
 
     private Item inspectedItem;
     private bool isInspecting = false;
+    private bool hasItemBeenThrown = false; // РџСЂРѕРІРµСЂРєР° РІС‹Р±СЂРѕСЃР° РїСЂРµРґРјРµС‚Р°
 
     void Start()
     {
-        // Скрываем панель при запуске
         if (inspectPanel != null)
         {
             inspectPanel.Hide();
-            Debug.Log("Панель осмотра скрыта при старте");
         }
     }
 
     void Update()
     {
-        // Запуск осмотра
+        // Р—Р°РїСѓСЃРє РѕСЃРјРѕС‚СЂР° (РєР»Р°РІРёС€Р° "1")
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (inventory != null && inventory.CurrentItem != null)
+            if (inventory.CurrentItem != null)
             {
                 InspectItem(inventory.CurrentItem);
                 isInspecting = true;
-                Debug.Log("Нажата клавиша 1 - запускаем осмотр");
-            }
-            else
-            {
-                Debug.Log("Нет предмета для осмотра");
             }
         }
 
-        // Выход из осмотра
+        // Р’С‹С…РѕРґ РёР· РѕСЃРјРѕС‚СЂР° (Escape)
         if (isInspecting && Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Нажата Escape - выход из осмотра");
             ExitInspection();
         }
 
-        // Вращение предмета мышкой
+        // Р’СЂР°С‰РµРЅРёРµ РїСЂРµРґРјРµС‚Р° РїСЂРё РѕСЃРјРѕС‚СЂРµ
         if (isInspecting && Input.GetMouseButton(1))
         {
             float rotX = Input.GetAxis("Mouse X") * 100f * Time.deltaTime;
             float rotY = -Input.GetAxis("Mouse Y") * 100f * Time.deltaTime;
-
             if (inspectedItem != null)
             {
                 inspectedItem.transform.Rotate(Vector3.up, rotX, Space.World);
                 inspectedItem.transform.Rotate(Vector3.right, rotY, Space.World);
             }
         }
+
+        // Р’С‹Р±СЂРѕСЃ РїСЂРµРґРјРµС‚Р° (РєР»Р°РІРёС€Р° Q)
+        if (Input.GetKeyDown(KeyCode.Q) && inventory.CurrentItem != null && !hasItemBeenThrown)
+        {
+            hasItemBeenThrown = true;
+            inspectPanel.Hide();
+            Vector3 dropPos = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
+            Item dropped = inventory.DropItem(dropPos);
+
+            if (dropped != null)
+            {
+                dropped.EnablePhysics(true);
+                Rigidbody rb = dropped.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddForce(Camera.main.transform.forward * 2f, ForceMode.Impulse);
+                }
+            }
+        }
     }
 
-    /// <summary>
-    /// Начало осмотра предмета
-    /// </summary>
     public void InspectItem(Item item)
     {
+        if (item == null) return;
+
         inspectedItem = item;
-
-        // Перемещаем предмет
-        inspectedItem.transform.SetParent(inspectionPoint);
-        inspectedItem.transform.localPosition = Vector3.zero;
-        inspectedItem.transform.localRotation = Quaternion.identity;
-
-        // Отключаем физику
         inspectedItem.EnablePhysics(false);
-        inspectedItem.gameObject.SetActive(true);
+        item.transform.SetParent(inspectionPoint);
+        item.transform.localPosition = Vector3.zero;
+        item.transform.localRotation = Quaternion.identity;
+        item.gameObject.SetActive(true);
 
-        // Показываем UI
         if (inspectPanel != null)
         {
-            string desc = string.IsNullOrEmpty(item.itemDescription) ? "Описание отсутствует." : item.itemDescription;
+            string desc = string.IsNullOrEmpty(item.itemDescription) ? "РћРїРёСЃР°РЅРёРµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚." : item.itemDescription;
             inspectPanel.Show(item.itemName, desc);
         }
-
-        Debug.Log("Начат осмотр предмета: " + item.itemName);
     }
 
-    /// <summary>
-    /// Завершение осмотра предмета
-    /// </summary>
     public void ExitInspection()
     {
         if (inspectedItem != null)
         {
-            inspectedItem.gameObject.SetActive(false);
             inspectedItem.transform.SetParent(null);
+            inspectedItem.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 1.5f + Vector3.down * 0.3f;
+            inspectedItem.EnablePhysics(true);
             inspectedItem = null;
         }
 
@@ -108,6 +107,6 @@ public class ItemInspector : MonoBehaviour
         }
 
         isInspecting = false;
-        Debug.Log("Осмотр завершён");
+        hasItemBeenThrown = false;
     }
 }

@@ -1,12 +1,7 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
-public class Item : MonoBehaviour
+public class ItemPhysics : MonoBehaviour
 {
-    public string itemName = "Предмет";
-    public string itemDescription = "Описание предмета";
-    public Sprite itemIcon;
-
     [HideInInspector] public Rigidbody rb;
 
     void Awake()

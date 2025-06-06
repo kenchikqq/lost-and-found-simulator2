@@ -3,9 +3,8 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public Camera playerCamera;
-    public float pickupRange = 2f;
-    public float dropForwardDistance = 1.5f;
     public SingleSlotInventory inventory;
+    public float pickupRange = 2f;
 
     void Update()
     {
@@ -13,39 +12,33 @@ public class ItemPickup : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-            if (Physics.Raycast(ray, out RaycastHit hit, pickupRange))
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, pickupRange))
             {
                 Item item = hit.collider.GetComponent<Item>();
                 if (item != null)
                 {
                     inventory.AddItem(item);
-                    item.EnablePhysics(false);
-                    item.gameObject.SetActive(false);
-                    Debug.Log("Предмет поднят: " + item.itemName);
+                    item.EnablePhysics(false); // Отключаем физику
+                    item.gameObject.SetActive(false); // Делаем невидимым
                 }
             }
         }
 
         // Выбросить предмет (Q)
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && inventory.CurrentItem != null)
         {
-            if (inventory.CurrentItem != null)
+            Vector3 dropPos = playerCamera.transform.position + playerCamera.transform.forward * 1.5f;
+            Item dropped = inventory.DropItem(dropPos);
+
+            if (dropped != null)
             {
-                Vector3 dropPos = playerCamera.transform.position + playerCamera.transform.forward * dropForwardDistance;
-                Item dropped = inventory.DropItem(dropPos);
-
-                if (dropped != null)
+                dropped.EnablePhysics(true); // Включаем физику
+                ItemThrow itemThrow = dropped.GetComponent<ItemThrow>();
+                if (itemThrow != null)
                 {
-                    dropped.EnablePhysics(true);
-
-                    // Немного отталкиваем предмет вперёд
-                    if (dropped.rb != null)
-                    {
-                        dropped.rb.linearVelocity = playerCamera.transform.forward * 2f;
-                        dropped.rb.angularVelocity = Random.insideUnitSphere * 2f;
-                    }
-
-                    Debug.Log("Предмет выброшен: " + dropped.itemName);
+                    itemThrow.Throw(playerCamera.transform); // Выбросить предмет
                 }
             }
         }
